@@ -27,6 +27,7 @@ Each template demonstrates a specific agent architecture or capability. Choose b
 | [SocialMediaCrew](./SocialMediaCrew/) | Content creation pipeline | Multi-agent workflow, image generation | Advanced |
 | [DataScience](./DataScience/) | Natural language to SQL | Database queries, self-healing, visualization | Advanced |
 | [DeepSearch](./DeepSearch/) | Multi-step research | Human-in-the-loop, parallel execution | Advanced |
+| [DataEngineering](./DataEngineering/) | Snowflake + dbt pipelines | Pipeline development, data quality, dbt | Advanced |
 
 ## Quick Start
 
@@ -100,6 +101,8 @@ gradient agent deploy
 
 **[DeepSearch](./DeepSearch/)** - A research agent with human-in-the-loop plan approval and parallel section research using LangGraph's Send API. Produces comprehensive reports with citations.
 
+**[DataEngineering](./DataEngineering/)** - A data engineering assistant that helps build and manage Snowflake data pipelines using dbt. Can create transformation models, run data quality checks, troubleshoot pipeline failures, and explore your data warehouse. Includes a full sample e-commerce dataset with realistic data quality issues and a complete dbt project with staging, intermediate, and mart layers.
+
 ## Common Patterns
 
 ### Agent Structure
@@ -142,6 +145,9 @@ Common environment variables across templates:
 | `SERPER_API_KEY` | Serper web search API | Crew, SocialMediaCrew, DeepSearch |
 | `TAVILY_API_KEY` | Tavily search API | MCP |
 | `OPENAI_API_KEY` | OpenAI API (for embeddings) | RAG |
+| `SNOWFLAKE_ACCOUNT` | Snowflake account identifier | DataEngineering |
+| `SNOWFLAKE_USER` | Snowflake username | DataEngineering |
+| `SNOWFLAKE_PASSWORD` | Snowflake password | DataEngineering |
 
 ## Resources
 

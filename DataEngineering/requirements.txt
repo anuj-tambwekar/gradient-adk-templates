@@ -1,0 +1,11 @@
+--only-binary :all:
+gradient-adk
+langgraph
+langchain
+langchain-core
+langchain-gradient
+gradient
+snowflake-connector-python
+dbt-snowflake
+python-dotenv
+pydantic>=2.0
